@@ -23,5 +23,8 @@ if (opcion === 1) {
   dibujarGuion();
   console.log("El resultado de la resta es:", resultado);
   dibujarGuion();
+} else {
+  dibujarGuion();
+  console.log("Opcion invalida");
+  dibujarGuion();
 }
-//agregar un else opcion invalida
