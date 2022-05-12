@@ -1,3 +1,6 @@
+/* EJERCICIO OPERADORES &&(y), || (o), ! (negacion)
+ */
+
 if (7 > 4 && 20 > 10) {
   console.log("verdadero");
 } else {

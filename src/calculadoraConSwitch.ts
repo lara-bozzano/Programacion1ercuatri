@@ -41,6 +41,7 @@ switch (opcion) {
     dibujarGuion();
     console.log("El resultado de la division es:", resultado);
     dibujarGuion();
+    break;
   default:   
     console.log("Opcion invalida");
 } 
