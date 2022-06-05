@@ -6,6 +6,6 @@ if (numero % 2 === 0) {
   console.log("El num ingresado es impar");
 }
 
-if (numero <= 0) {
+while (numero <= 0) {
   numero = Number(prompt("Ingrese un num mayor a 0"));
 }
