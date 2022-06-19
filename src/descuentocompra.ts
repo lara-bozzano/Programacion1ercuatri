@@ -1,5 +1,4 @@
 let precioProducto: number = Number(prompt("ingresar el precio"));
-//let cantidad: number = precioProducto * 5;//
 let cantidad: number = Number(prompt("ingresar cantidad"));
 let precioTotal: number = precioProducto * cantidad;
 

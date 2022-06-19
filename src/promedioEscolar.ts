@@ -1,7 +1,3 @@
-//algoritmo q permita cargar alumnos y sus notas en los 3 trim
-//obtener el promedio anual (es decir, de sus tres notas)
-//del alumno ingresado por el usuario
-
 let cantAlumnos: number = Number(prompt("Ingrese cantidad de alumnos:"));
 let alumnos: string[] = new Array(cantAlumnos);
 let nota1: number[] = new Array(cantAlumnos);
