@@ -3,14 +3,17 @@
 //el PRECIO UNITARIO de cada producto
 //mostrar: detalle de la compra: prods, cant, precio unitario y precio total.
 
-let cantTotalProdus: number = Number(prompt("Ingrese la cantidad de productos"));
-let productos: string[] = new Array(cantTotalProdus);
-let precioProdus: number[] = new Array(cantTotalProdus);
-let cantProdus: number[] = new Array(cantTotalProdus);
+let cantTotalProductos: number = Number(
+  prompt("Ingrese la cantidad de productos")
+);
+let productos: string[] = new Array(cantTotalProductos);
+//let precioProdus: number[] = new Array(cantTotalProductos);
+//let cantProdus: number[] = new Array(cantTotalProductos);
 
-function cargarProds(arrayProductos: string[]): void {
-  for (let i: number = 0; i <= productos.length; i ++)
-  productos[i] = prompt("Ingrese el producto "+ i + "de la compra");
+function cargarProductos(arrayProductos: string[]): void {
+  for (let i: number = 0; i < arrayProductos.length; i++) {
+    arrayProductos[i] = prompt("Ingrese los productos de la compra");
+  }
 }
 
-cargarProds(productos)
+console.log(cargarProductos(productos));

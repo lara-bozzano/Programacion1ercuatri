@@ -6,7 +6,7 @@
 let cantTotalProd: number = Number(
   prompt("Ingrese cantidad total de productos:")
 );
-let productos: string[] = new Array(cantTotalProd);
+//let productos: string[] = new Array(cantTotalProd);
 //let cantCadaProd: number = Number(prompt("Ingrese ctos compro de este prod"))
 let cantProds: number[] = new Array(cantCadaProd);
 
