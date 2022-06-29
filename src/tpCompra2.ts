@@ -13,7 +13,7 @@ let precioTotal: number = 0;
 
 function cargarProductos(arrayProductos: string[]): void {
   for (let i: number = 0; i < cantTotalProductos; i++) {
-    productos[i] = prompt("Ingrese el producto " + i + " de la compra");
+    productos[i] = prompt("Ingrese los productos de la compra");
   }
 }
 
@@ -52,7 +52,8 @@ function mostrarListado(): void {
         " unidades de " +
         productos[i] +
         " al precio de " +
-        precioProdus[i]
+        precioProdus[i] +
+        " pesos"
     );
   }
   console.log("El total de la compra es: ", precioTotal);
