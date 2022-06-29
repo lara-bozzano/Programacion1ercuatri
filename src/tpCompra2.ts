@@ -11,21 +11,29 @@ let precioProdus: number[] = new Array(cantTotalProductos);
 let cantProdus: number[] = new Array(cantTotalProductos);
 
 function cargarProductos(arrayProductos: string[]): void {
-  for (let i: number = 0; i < arrayProductos.length; i++) {
-    arrayProductos[i] = prompt("Ingrese los productos de la compra");
+  for (let i: number = 0; i < cantTotalProductos; i++) {
+    productos[i] = prompt("Ingrese los productos de la compra");
+    precioProdus[i] = Number(prompt("Ingrese el precio del producto"));
+    cantProdus[i] = Number(prompt("Ingrese la cantidad de este producto"));
   }
 }
 
 //function totalCompra();
 
-
-function mostrarListado(): void{
+function mostrarListado(): void {
   console.log("El listado de productos y su respectivo total es:");
   for (let i: number = 0; i < cantTotalProductos; i++) {
-    console.log("Producto: ", productos[i], "Precio unitario: ", precioProdus[i], "Cantidad de productos: ", cantProdus[i]);
+    console.log(
+      "Producto: ",
+      productos[i],
+      "Precio unitario: ",
+      precioProdus[i],
+      "Cantidad de productos: ",
+      cantProdus[i]
+    );
   }
 }
 //console.log(cargarProductos(productos));
 
-cargarProductos()
-mostrarListado()
+cargarProductos();
+mostrarListado();
